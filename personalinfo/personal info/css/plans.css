@@ -1,0 +1,177 @@
+/*QuickReset*/
+*{
+  margin:0;box-sizing:border-box;
+}
+
+ /* body - or any parent wrapper */
+body {               
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/*to occupy the all the space in between header nad footer*/
+main {
+  flex: 1;
+}
+
+#header-row-height{
+}
+
+#footer-background{
+    background-color: #ebebeb ;
+}
+#footer-row1-height{
+    height: 7.95vh;
+}
+
+#custom-ul{
+    margin-bottom: 0!important;
+}
+
+ul#custom-ul li a{
+    color: #000000;
+    font-size: 0.875rem; /*equivalent to 14px*/
+    font-family: "Fira Sans Regular", sans-serif;
+}
+#search-row-flexible{
+      margin-top: -1.4%;
+}
+
+nav.link_style a {
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-family: "Fira Sans Regular", sans-serif;
+}
+
+.copyright {
+    font-size: 0.75rem; /*equivalent to 14px*/
+    color: #000000;
+    font-family: "Fira Sans Regular", sans-serif;
+    padding: 0 0 1em 0;
+}
+.search-font{
+    font-size: 0.75rem; /*equivalent to 14px*/
+    color: #000000;
+    font-family: "Fira Sans Light", sans-serif;
+}
+
+#custom-header{
+background-color: #0078d7 ;
+}
+
+#custom-search{
+    z-index: 1;
+    box-shadow: -2px 2px 38px #888888;
+  }
+
+.form-control-no-border:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.animation-position{
+  position: relative;
+}
+
+.search-bar-position{
+  position: absolute;
+}
+.animation-position-alt{
+  position: fixed;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+
+/*iPhone 5 & 5S in landscape*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+#header-row-height {
+    height: 26.4vh!important;
+}
+}
+
+ /*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+  #search-row-flexible {
+    margin-top: -4.4%;
+}
+#header-row-height {
+    height: 14.4vh;
+}
+#logo-sm{
+    height: auto;
+    width: 70%;
+}
+}
+
+/*// Small devices (landscape phones, 576px and up)
+*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+ }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+.pr-md-5-5-2{
+padding-right: 7rem!important;
+}
+.pb-md-3-1{
+  padding-bottom: 1.25rem!important;
+}
+.px-md-5-5-2{
+padding-left: 7rem!important;
+padding-right: 7rem!important;
+}
+.mr-md-5-near{
+  margin-right: 2.8rem!important;
+}
+}
+
+
